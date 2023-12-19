@@ -35,3 +35,11 @@ Route::get('/planets2', function () {
 Route::get('/planets', [PlanetController::class, 'index']);
 
 Route::get('/planets/{planet}', [PlanetController::class, 'show']);
+
+// routes/web.php
+
+
+// routes/web.php
+
+
+Route::get('/planet/{planetId}', [PlanetController::class, 'show']);

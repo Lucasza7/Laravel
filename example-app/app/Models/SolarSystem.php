@@ -10,6 +10,8 @@ class SolarSystem extends Model
     
     public function planets()
     {
-        return $this->hasMany(Planet::class);
+        return $this->hasMany(Planets::class);
     }
+
+    
 }

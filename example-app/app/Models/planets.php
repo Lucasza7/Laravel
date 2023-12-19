@@ -1,15 +1,22 @@
 <?php
+// app/Planets.php
 
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Planet extends Model
+class Planets extends Model
 {
-    // Andere eigenschappen en methoden van het model
-    
+    protected $fillable = [
+        'name',
+        // Voeg hier andere bewerkbare velden toe indien nodig
+    ];
+
     public function solarSystem()
     {
         return $this->belongsTo(SolarSystem::class);
     }
+    
+    
 }
+?>
