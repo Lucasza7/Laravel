@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\PlanetController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PivotController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -43,3 +45,5 @@ Route::get('/planets/{planet}', [PlanetController::class, 'show']);
 
 
 Route::get('/planet/{planetId}', [PlanetController::class, 'show']);
+
+Route::get('/pivot-data', [PivotController::class, 'getData']);
